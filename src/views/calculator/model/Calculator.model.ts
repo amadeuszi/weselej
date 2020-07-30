@@ -7,5 +7,6 @@ export type CalculatorModel = {
     peopleCostList: Array<PersonCostModel>;
     benzinCost: BenzinCostModel;
     busCost: BusCostModel;
-    additionalCosts: Array<AdditionalCost>
+    additionalCosts: Array<AdditionalCost>;
+    isWithSecondDay: boolean;
 };

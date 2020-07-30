@@ -4,5 +4,6 @@ export type PersonCostModel = {
     firstDayCost: number;
     secondDayCost: number;
     taxCost: number;
+    taxCost2: number;
     isSelected: boolean;
 }
