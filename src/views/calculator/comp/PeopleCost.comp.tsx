@@ -7,16 +7,13 @@ import { CheckboxInput } from "../field/CheckboxInput.comp";
 import { useCalculatorFormikContext } from "../util/useCalculatorFormikContext.util";
 
 export const PeopleCost = () => {
-    const {
-        values,
-    } = useCalculatorFormikContext();
+   
 
     return (
         <Container>
             <PeopleCostHeader />
             <PeopleCostList />
-            <CheckboxInput name="isWithSecondDay" value={values.isWithSecondDay} label="Wesele z poprawinami" />
-            <CostSummary />
+           
         </Container>
     );
 }
