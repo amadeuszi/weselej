@@ -10,3 +10,4 @@ export type CalculatorModel = {
     additionalCosts: Array<AdditionalCost>;
     isWithSecondDay: boolean;
 };
+
