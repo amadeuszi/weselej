@@ -1,10 +1,11 @@
 import React from 'react';
 import { useCalculatorFormikContext } from '../util/useCalculatorFormikContext.util';
 import { OnlyDigitsInput } from '../field/OnlyDigitsInput.comp';
+import { useCountBenzinCost } from '../util/useCountBenzinCost.util';
 
 export const BenzinCost: React.FC = () => {
     const { values } = useCalculatorFormikContext();
-    const costOfBenzin = values.benzinCost.combustionPerHundredKm * values.benzinCost.costPerLiter * (values.benzinCost.howManyKm / 100);
+    const costOfBenzin = useCountBenzinCost();
     
     return (
         <p>
