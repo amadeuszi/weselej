@@ -4,6 +4,7 @@ import { Formik } from "formik";
 import { CalculatorModel } from "../model/Calculator.model";
 import { createCalculatorModel } from "../util/factory/createCalculatorModel.util";
 import { Calculator } from "./Calculator.comp";
+import { WeightChart } from "./weightChart/WeightChart.comp";
 
 export const CalculatorEntry: React.FC = () => {
     const handleSubmit = (values: CalculatorModel) => {
@@ -22,6 +23,9 @@ export const CalculatorEntry: React.FC = () => {
                 >
                     <Calculator />
                 </Formik>
+
+                <WeightChart />
+
             </Container>
         </>
     )
